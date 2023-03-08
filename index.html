@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#257f9b ;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #e0796b;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #7be403;
+    color: #0400ff;
+}
+.aside {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/HuTao.jpg);
+    background-position: center;
+    height: 500px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #4fd800;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .aside {
+         background-image: url(img/Ichigo.jpeg);
+    }
+
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Practica 9</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://daxter24.github.io/PRACTICAS-1/">Practica 1</a></li>
+    <li><a href="https://daxter24.github.io/Linea-del-tiempo-web/">Practica 2</a></li>
+    <li><a href="https://daxter24.github.io/PRACTICA-3/">Practica 3</a></li>
+    <li><a href="https://daxter24.github.io/PRACTICA-4-WEB/">Practica 4</a></li>
+    <li><a href="https://daxter24.github.io/practica-5/">Practica 5</a></li>
+    <li><a href="https://daxter24.github.io/PRACTICA-6/">Practica 6</a></li>
+    <li><a href="https://daxter24.github.io/practica-7/">Practica 7</a></li>
+    <li><a href="https://daxter24.github.io/PRACTICA-8/">Practica 8</a></li>
+
+  </ul>
+</div>
+
+<div class="col-6">
+  <h1>Mi CV</h1>
+  <p>
+    <div style="text-align: center;">
+      <video src="img/VideCV.mp4" controls height="352" width="600"></video>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d943.9345352558596!2d-97.0987002!3d18.8543076!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1676946923666!5m2!1ses-419!2smx"></iframe>
+  </div>
+  <br>
+  <div>
+      <fieldset>
+          <h3>Mis Datos</h3><br>
+          <h2>Datos Personales</h2><br>
+          <ul>
+            <li id="lista">Nombre completo: <b>Josè Jair Borbonio Gonzalez</b> </li>
+            <li id="lista2">Fecha de nacimiento: <b> 24 de Agosto del 2001</b></li>
+            <li id="lista3">Lugar de naciemiento: <b>Cordoba Veracruz</b> </li>
+          </ul><br>
+          <h2>Formaci&oacute;n Acad&eacute;mica</h2><br>
+          <ul>
+            <li id="lista">2008-2014: <b>"Escuela primaria Renacimiento"</b></li>
+            <li id="lista">2014-2017: <b>"Escuela secundaria general No 1"</b></li>
+            <li id="lista2">2017-2020: <b> "Centro de Bachillerato Tecnológico Industrial y de Servicios 47"</b></li>
+            <li id="lista3">2020-CURSANDO: <b>"INSTITUTO TECNOLOGICO DE ORIZABA"</b> </li>
+          </ul><br>
+          <h2>Experiencia laboral</h2>
+        <div id="lista"> 
+            <ul>
+            <li id="lista">2019-2019: <b>Mantenimiento a centro de computo</b> </li>
+            <li id="lista2">2019-2020: <b> Cocinero y mesero en una cafeteria</b></li>
+            <li id="lista3">2021-2023: <b>Mesero en un Restaurante</b> </li>
+            </ul>
+        </fieldset>
+  </div>
+  </p>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
